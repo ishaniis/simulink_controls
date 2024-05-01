@@ -1,0 +1,15 @@
+Section 1: 
+Control System (CrashCourse)
+We'll start with PID. 
+
+
+Applied Controls -> MPC Implementation using Python
+Python Engineering Animations 
+
+Water Tank Problem: 
+Error: Reference - Volume 
+
+50 Hz
+
+Error = Reference - Actual Volume  
+
