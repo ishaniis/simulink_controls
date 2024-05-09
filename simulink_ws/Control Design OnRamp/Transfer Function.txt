@@ -1,8 +1,32 @@
-Why do we need transfer functions - if everything is represented in form of 1st Order ODE(Ordinary Differential Equations). 
+1.1 Why do we need transfer functions - if everything is represented in form of 1st Order ODE(Ordinary Differential Equations). 
 
-Reason: We'd like to use algebraic expressions to solve, rather then getting the need to solve ODE's -> that led to the transfer function. 
-Reason control engineers don't prefer working with Differential equations is that they end up leading to very complex equations -> To get to a solution through complex differential equations gets way more tediuous than working with algebraic expressions. 
+1.2.1 Reason: We'd like to use algebraic expressions to solve, rather then getting the need to solve ODE's -> that led to the transfer function. 
+1.2.2 Reason control engineers don't prefer working with Differential equations is that they end up leading to very complex equations -> To get to a solution through complex differential equations gets way more tediuous than working with algebraic expressions. 
 
-How are they represented ?
+1.3 How are they represented ?
+1.3.1.1 Transfer function is defined as the ratio of Laplace Transform of (output) to the Laplace Transfer of the input signal i.e equates it to:
+1.3.1.2 Transfer Function = Laplace(Output Signal) / Laplace (Input Signal)
+1.3.1.3 The above ratio holds for WHEN: Intial Condition is assumbed to be ZERO.  
 
+1.4 Complex Function is represented as H(s) (s is also Complex) 
 
+1.4.1.1 Laplace Transform: h(t) -> Laplace Transform -> H(s)
+1.4.1.2 Inverse Laplace Transform: H(s) -> h(t)
+
+1.5 Going over the system
+
+Using Laplace
+Input: x(t) -> X(s)
+Output: y(t) -> Y(S)
+System/Plant relationship -> 
+
+1.6 H(s) = Y(s) / X(s) | Zero Initial Condition
+Transfer Function & Impulsive response -> only used for -> LTI systems
+
+2.1 Why Zero Intial conditon ? 
+If not, it'll make system Non Linear (As I/p != 0 & O/P != 0) 
+
+Total Output = Zero Input Response(ZIR) + Zero State Response (ZSR)
+
+ZIR, when i/p -> Equivalent to Zero (Due to initial conditions) 
+ZSR, when i/p -> When input is applied. 
