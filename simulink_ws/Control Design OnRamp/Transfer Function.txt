@@ -1,0 +1,8 @@
+Why do we need transfer functions - if everything is represented in form of 1st Order ODE(Ordinary Differential Equations). 
+
+Reason: We'd like to use algebraic expressions to solve, rather then getting the need to solve ODE's -> that led to the transfer function. 
+Reason control engineers don't prefer working with Differential equations is that they end up leading to very complex equations -> To get to a solution through complex differential equations gets way more tediuous than working with algebraic expressions. 
+
+How are they represented ?
+
+

@@ -1,0 +1,45 @@
+Control Design using simulink
+
+1. A common input signal that many control engineers use to explore the plant is the unit step signal.
+
+2. Lens Movement:
+(Range of Current with unit step block: [0,1]
+2.1 1 mA (Current) -> 20.73 micro metres
+2.2 So Current is directly proportional to the displacement produced. If Current 10x, so the displacement will also be 10x (In this model of Camera considered for this course)
+
+3.1 By default, the Step block changes the input from 0 to 1 (mA) at 1 second. As you saw in the previous task, the lens moves to 20.73 micrometers in response to a 1 mA current input.
+3.2 For a linear system, if the current is increased by a factor of 10 (to 10 mA), the lens would also move 10 times further to 207.3 micrometers. 
+3.2.1 Intended Behavior: 207.3 micrometres
+3.2.2 Observed Behavior: 186.7 micrometres (for 10x increase in Current)
+3.2.3 Conclusion: Plant is Non linear and exhibits a non-linear behavior. 
+
+Section 2: 
+
+S2.1 Observations:
+Overshoot is happening(Final Position) and settling time performance(3 seconds to reach steady state) need to be tweaked.
+
+S2.2 Objective: 
+(Linear Time Invariant Systems)
+
+S2.3 Linear vs Non Linear Systems
+S2.3.1 Linear: Input has a linear relationship with Output
+S2.3.2 Non Linear: Input has a nonLinear relationship with Output
+
+S2.4 One way of working with Non Linear Systems -> To Linearize the systems -> So that performance can be predicted and controlled accordingly. 
+
+S2.5 Let's dive into this stream and action plan:
+S2.5.1.1 If you see a parabola over the Non Linear System(Call it an example of Lift Force (y) = k*u^2
+S2.5.1.2 Where, y-> Lift Force, u-> Velocity, Tangent on the parabola of the equation gives you the Operating Point (Using LTI system -> Linear System)
+
+S2.6 By linearizing, you found LTI system with similar behavior, which emulates the same behavior as that of the Non Linear System in reference. 
+
+S2.7 In Simulink, you achieve it using through the Linearization toolbox -> Model Linearization -> which will effectively find that LTI system for your Non Linear System. 
+
+Section 3:
+S3.1 In Linearization toolbox, Select your Input & Output respectively (Specify it using Linearization toolbox)
+Then you specify Operating Point. -> LTI system is obtained under the Workspace. 
+
+S3.2 To linearize the plant in Simulink, you need to tell Simulink which portion of the model is the plant.
+This is done by adding linear analysis points to specify the input and output signals as the plant's input and output.
+
+S3.3 You have obtained an LTI system by linearizing the plant. The LTI approximation of the plant should behave like the actual plant near the operating point. 

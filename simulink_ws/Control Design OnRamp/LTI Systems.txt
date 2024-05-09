@@ -1,0 +1,30 @@
+What are LTI? 
+LTI -> Linear Time Invariant
+
+(a) Linear System(Follows the principle of Superposition) + Time Invariant System
+
+Characterisitics of LTI:
+1. Will follow the Law of Superposition
+1.1 Low of Homogeneity
+1.2 
+2. Any delay in input -> is reflected -> In the Output
+
+3.1 Input
+S(t))
+x(t)
+
+3.2 Output
+y(t)
+h(t) -> Impulse Response to show O/P of LTI
+
+3.3.1 It'll be difficult to work with time-domain to get the system relationship of input with the output, 
+3.3.2 so we'd work with Frequency Domain -> that is possible through Laplace(time domain -> Frequency Domain) 
+3.3.3 Using the system relationship between Input and the Output, you could potentially calculate the Transfer Function of the system. 
+
+4. Using Fourier or Laplace, where H(s) and H(omega) are your transfer functions
+4.1 If you were to use Fourier over the impulse response -> You'll get H(omega) [World of Real Numbers]
+4.2 If you were to use Laplace over the impulse response -> You'll get H(s) [World of Complex Numbers -> Complex Plane] 
+
+5. After having transfer function, you can go back to time response using either
+5.1.1 Inverse Fourier Transform 
+5.1.2 Inverse Laplace Transform
