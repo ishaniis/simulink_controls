@@ -1,0 +1,31 @@
+Let's take a system equation:
+
+y(t) = x(t- 1) + 5 -> Constant Term leads to System being NON Linear -> Non LTI System 
+
+H(s) = ?
+
+Y(s) = X(s).e^(-s) + (infinity)
+
+-> Why 5 is equatted to infinity
+Reason: L{5} or L{dc} -> equates to infinity / Not Defined 
+
+-> Double sided Power signal do not exist. 
+
+Equation 2: 
+y(t) = x(t-1) + 5*u(t)
+
+H(s) = ?
+
+Y(s) = X(s)*e^(-s) + 5/s -> NON LTI system -> So Transfer Function will not exist. 
+
+Equation 4:
+y(t) = x(2t)
+ANY LTI System shouldn't have any Time scaling
+
+Equation 5:
+y(t) = x(t - 2) + x(t + 2)
+
+Y(s) = X(s).e^(-2s) + X(s).e^(2s)
+Y(s) = X(s)[e^(-2s) + e^(2s)]
+
+H(s) = Y(s) / X(s) = e^(-2s) + e^(2s)
